@@ -37,7 +37,7 @@ int main(int argc, char* argv[]) {
 
 
 
-	/* Actuallt write that allocated memory to the process memory */
+	/* Actually write that allocated memory to the process memory */
 	WriteProcessMemory(hProcess, rBuffer, Puke, sizeof(Puke), NULL);
 	printf("%s written memory %zu-bytes with PAGE_EXECUTE_READWRITE permissons", k, sizeof(Puke));
 
